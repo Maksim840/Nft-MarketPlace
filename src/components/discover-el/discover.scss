@@ -1,0 +1,38 @@
+
+.container_discover {
+    position: relative;
+    padding: 150px 0;
+    width: 100%;
+    display: inline-block;
+    .right_side {
+        display: inline-block;
+        position: relative;
+        z-index: 5;
+        left: 650px;
+
+        h3 {
+            color: white;
+            font-family: 'Tubular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 100px;
+            line-height: 95px;
+        }
+
+        .p_nft {
+            font-family: 'Bebas Neue';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 230px;
+            line-height: 230px;
+            color: #7113bd;
+        }
+    }
+
+    .left_side {
+        position: absolute;
+        z-index: 0;
+        left: -70px;
+        top: 0px
+    }
+}

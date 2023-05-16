@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.container_catalog {
+    display: block;
+    padding: 70px 0;
+
+    .button_container {
+        display: flex;
+        justify-content: space-between;
+
+        .but {
+            background-color: hsla(0, 0%, 11%, 0);
+            color: white;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            border-radius: 20px;
+            width: 144px;
+            height: 49px;
+            border: 1px solid #BBBBBB;
+            &:hover {
+                background-color: #ab4af5;
+                transition: 0.3s;
+            }
+        } 
+
+    }
+    .nft_cards_container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

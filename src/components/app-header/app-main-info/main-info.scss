@@ -1,0 +1,40 @@
+@font-face {
+    //font-family: Tubular;
+    // /* Гарнитура шрифта */
+    //src: url("./fonts/onektubular.otf") format("truetype");
+    // /* Путь к файлу со шрифтом */
+ //src: local("onektubular") 
+}
+
+.header_main {
+    .left_side {
+        z-index: 5;
+        position: relative;
+        top: 85px;
+
+        h1 {
+            color: white;
+            font-family: 'Tubular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 100px;
+            line-height: 95px;
+        }
+
+        .p_creators {
+            font-family: 'Bebas Neue';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 230px;
+            line-height: 230px;
+            color: #7113bd;
+        }
+    }
+
+    .right_side {
+        position: absolute;
+        right: 146px;
+        top: 135px;
+        z-index: 0;
+    }
+}

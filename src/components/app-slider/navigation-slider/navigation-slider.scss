@@ -1,0 +1,38 @@
+.container_slider {
+    padding: 150px 0;
+    width: 100%;
+    
+    .nav_slider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav_slider_info {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 59px;
+            color: #ffffff;
+        }
+
+        .view_all_button {
+            .view_all {
+                padding: 8px;
+                border: 1px solid rgba(195, 216, 255, 0.4);
+                border-radius: 15%;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                color: #d3d3d3;
+                text-decoration: none;
+            }
+        }
+    }
+    .container_cards {
+        display: flex;
+        justify-content: space-between;
+    }
+}

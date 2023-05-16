@@ -1,0 +1,30 @@
+.nft_container {
+    display: inline-block;
+    background: #440A8C;
+    border-radius: 20px;
+
+    .nft_img {}
+
+    .nft_info_container {
+        display: flex;
+        justify-content: space-around;
+
+        .name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            color: #FFFFFF;
+        }
+
+        .price {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            color: #FFFFFF;
+        }
+    }
+}

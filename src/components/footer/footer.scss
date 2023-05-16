@@ -1,0 +1,46 @@
+.container_footer {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(123.86deg, rgba(45, 16, 108, 0.48) 29.92%, rgba(24, 8, 61, 0.312) 79.91%);
+    backdrop-filter: blur(39.5px);
+    position: absolute;
+    width: 100%;
+    height: 390px;
+    padding: 0px 146px;
+    justify-content: space-around;
+    padding-top: 80px;
+
+    .first_part_footer {
+        display: block;
+
+        .info {
+            
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+
+            color: #BBBBBB;
+
+        }
+    }
+
+    .second_part_footer {
+        
+        display: block;
+
+        .info {
+            text-decoration: none;
+            position: relative;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+
+            color: #BBBBBB;
+
+        }
+    }
+}
