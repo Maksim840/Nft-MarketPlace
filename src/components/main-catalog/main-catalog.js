@@ -1,7 +1,12 @@
 import "./main-catalog.scss";
 import Cards from '../main-cards/main-nft-cards'
-const Catalog = () => {
+const Catalog = ({data}) => {
+  const el = data.map(item => {
+    return (
+        <Cards {...item}/>
+    )})
   return (
+    
     <div className="container_catalog">
         <div className="button_container">
             <button className="but">All</button>
@@ -13,12 +18,7 @@ const Catalog = () => {
             <button className="but">Virtual World</button>
         </div>
         <div className="nft_cards_container">
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
+            {el}
         </div>
     </div>
   );

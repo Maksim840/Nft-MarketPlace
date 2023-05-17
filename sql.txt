@@ -1,0 +1,16 @@
+CREATE TABLE nft (
+    img VARCHAR(100),
+    name VARCHAR(100),
+    price DECIMAL(10, 2)
+);
+
+INSERT INTO nft (img, name, price)
+VALUES
+    ('/images/Nft1.png', 'Lucky_watcher', 32),
+    ('/images/Nft2.png', '#46 HORRER', 15),
+    ('/images/Nft3.png', 'Hooligan', 72),
+    ('/images/Nft4.png', 'Nano Portrait 32', 322),
+    ('/images/Nft5.png', 'Aarmj', 4.2),
+    ('/images/Nft6.png', 'Opaner', 1.9),
+    ('/images/Nft7.png', 'Fergi', 6),
+    ('/images/Nft8.png', 'ohhoooT322', 10);
