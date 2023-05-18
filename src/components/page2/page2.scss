@@ -1,3 +1,8 @@
 .container_page2 {
     margin: 0 146px;
+    .nft_cards_container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }

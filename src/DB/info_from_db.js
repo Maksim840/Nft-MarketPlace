@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const { createServer } = require('http');
 const app = express();
-const port = 3001;
+const port = 3000;
 
 mongoose
   .connect('mongodb+srv://Maksim:Pas123@maksim.ppszojk.mongodb.net/nft-cards', {
@@ -21,20 +21,25 @@ const UsersSchema = new mongoose.Schema({
     required: true,
   },
   price: {
-    type: Number,
+    type: String,
     required: true,
   },
 });
 
 const Cards = mongoose.model('Cards', UsersSchema);
-
+let data = null
 app.get('/api', (req, res) => {
   Cards.find()
     .then(cards => {
-      res.json(cards);
+      data = cards; 
+      res.send('Data fetched successfully.'); 
     })
-    .catch(err => res.send(err));
+    .catch(err => {
+      console.error(err);
+      res.status(500).send('Error fetching data.'); 
+    });
 });
 
 const server = createServer(app);
 server.listen(port, () => console.log(`server is up. port: ${port}`));
+export default data;

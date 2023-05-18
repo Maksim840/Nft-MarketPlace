@@ -1,13 +1,18 @@
 import Discover from "../discover-el/discover";
-import Catalog from "../main-catalog/main-catalog";
 import './page2.scss'
 import Cards from "../main-cards/main-nft-cards";
 
-function Page2() {
+function Page2({data}) {
+
+    const el = data.map(item => {
+        return (
+            <Cards {...item}/>
+        )})
+
     return(
         <div className="container_page2">
             <Discover/>
-            <Catalog></Catalog>
+             <div className="nft_cards_container">{el}</div>
         </div>
     )
 }

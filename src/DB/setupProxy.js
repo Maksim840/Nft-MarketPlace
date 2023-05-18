@@ -4,7 +4,7 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://localhost:3001', // Замените на ваш порт сервера
+      target: 'http://localhost:3001', 
       changeOrigin: true,
     })
   );

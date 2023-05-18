@@ -10,8 +10,8 @@ export default function Navigation_header() {
             <div className="header_nav">
                 <Link to="/" className="nav">Home</Link>
                 <Link to="/posts" className="nav">NFT's</Link>
-                <a href="#" className="nav">Collection</a>
-                <a href="#" className="nav">Community</a>
+                <a href="#nft" className="nav">Collection</a>
+                <a href="#info" className="nav">Community</a>
             </div>
 
             <div className="header_auth">
